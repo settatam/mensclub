@@ -18,10 +18,11 @@ var mainView = myApp.addView('.view-main', {
 });
 
 $$('.make-appointment').on('click', function (e) {
-    var iframe = '<iframe width="100%" style="height: 100em;" src="https://online.getsquire.com/mens-club-barbershop-philadelphia" frameborder="0"></iframe>';
-    $$('.popup').html("Loading...");
-    $$('.popup').html(iframe);
-    myApp.popup('.popup');
+    var ref = cordova.InAppBrowser.open("https://online.getsquire.com/mens-club-barbershop-philadelphia");
+    // var iframe = '<iframe width="100%" style="height: 100em;" src="https://online.getsquire.com/mens-club-barbershop-philadelphia" frameborder="0"></iframe>';
+    // $$('.popup').html("Loading...");
+    // $$('.popup').html(iframe);
+    // myApp.popup('.popup');
 });
 
 // Callbacks to run specific code for specific pages, for example for About page:
