@@ -1,4 +1,11 @@
 // Initialize your app
+<script type="text/javascript" charset="utf-8">
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+  navigator.splashscreen.show();
+  alert('yes');
+}
+</script>
 var myApp = new Framework7();
 
 // Export selectors engine
