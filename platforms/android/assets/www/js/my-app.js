@@ -7,7 +7,6 @@ var $$ = Dom7;
 // Add view
 
 $$('.close-left-panel').on('click', function (e) {
-        // 'left' position to open Left panel
         myApp.closePanel('left');
 });
 
@@ -27,6 +26,13 @@ $$('.make-appointment').on('click', function (e) {
 
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('gallery', function (page) {
+    myApp.closePanel('left');
+});
+myApp.onPageInit('contact', function (page) {
+    myApp.closePanel('left');
+});
+
+myApp.onPageInit('index', function (page) {
     myApp.closePanel('left');
 });
 
