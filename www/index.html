@@ -20,32 +20,27 @@
     <!-- Left panel with reveal effect-->
     <div class="panel panel-left panel-reveal">
       <div class="content-block">
+        <div class="close close-panel"> x </div>
         <ul class="left-nav">
-          <li><a href="#">HOME</li>
-          <li><a href="#">GALLERY</li>
-          <li><a href="#">CONTACT</li>
+          <li><a href="#" class="home">HOME</li>
+          <li><a href="gallery.html" class="gallery">GALLERY</li>
+          <li><a href="#" class="contact">CONTACT</li>
         </ul>
+        <div class="phone"> <img src="/img/phone.png"></div>
+        <div class="location"> <img src="/img/location.png"> </div>
       </div>
     </div>
-    <!-- Right panel with cover effect-->
-    <div class="panel panel-right panel-cover">
-      <div class="content-block">
-        <p>Right panel content goes here</p>
-      </div>
-    </div>
+   
     <!-- Views-->
     <div class="views">
       <!-- Your main view, should have "view-main" class-->
       <div class="view view-main">
         <!-- Top Navbar-->
         <div class="navbar">
-          <div class="navbar-inner">
-            <!-- We have home navbar without left link-->
-            <div class="center sliding">Awesome App</div>
-            <div class="right">
-              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
-            </div>
+          <div class="left-hamburger">
+            <a href="#" class="link icon-only open-panel"> - </a>
           </div>
+          <div class="logo">this is the logo</div>
         </div>
         <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
         <div class="pages navbar-through toolbar-through">
@@ -53,49 +48,36 @@
           <div data-page="index" class="page">
             <!-- Scrollable page content-->
             <div class="page-content">
-              <div class="content-block-title">Welcome To My Awesome App</div>
+              
               <div class="content-block">
-                <div class="content-block-inner">
-                  <p>Couple of worlds here because my app is so awesome!</p>
-                  <p>Duis sed erat ac eros ultrices pharetra id ut tellus. Praesent rhoncus enim ornare ipsum aliquet ultricies. Pellentesque sodales erat quis elementum sagittis.</p>
+                <div class="hero">
+                  <img src="/img/home/hero.jpg" />
+                </div>
+
+                <div class="page-content">
+                  <h1>WELCOME TO THE MEN’S CLUB BARBERSHOP</h1>
+                  <p>An olde fashioned barber shop owned and operated by local barbers. Mens and boys haircuts, straight razor shaves, beard trims, all at reasonable prices. Come support a small local business. Parking in rear…  We are now accepting appointments and walk-ins everyday except Sunday. Book your appointment today!</p>
                 </div>
               </div>
-              <div class="content-block-title">What about simple navigation?</div>
-              <div class="list-block">
-                <ul>
-                  <li><a href="about.html" class="item-link">
-                      <div class="item-content">
-                        <div class="item-inner"> 
-                          <div class="item-title">About</div>
-                        </div>
-                      </div></a></li>
-                  <li><a href="services.html" class="item-link">
-                      <div class="item-content"> 
-                        <div class="item-inner">
-                          <div class="item-title">Services</div>
-                        </div>
-                      </div></a></li>
-                  <li><a href="form.html" class="item-link">
-                      <div class="item-content"> 
-                        <div class="item-inner">
-                          <div class="item-title">Form</div>
-                        </div>
-                      </div></a></li>
-                </ul>
-              </div>
-              <div class="content-block-title">Side panels</div>
-              <div class="content-block">
-                <div class="row">
-                  <div class="col-50"><a href="#" data-panel="left" class="button open-panel">Left Panel</a></div>
-                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Right Panel</a></div>
-                </div>
-              </div>
+            
+              
+             
             </div>
           </div>
         </div>
+        <!-- Pop Up for appointment -->
+          <div class="popup popup-about">
+            <div class="content-block">
+              <p>About</p>
+              <p><a href="#" class="close-popup">Close popup</a></p>
+              <p>Lorem ipsum dolor ...</p>
+            </div>
+        </div>
+        <!-- Pop Up for appointment -->
+        
         <!-- Bottom Toolbar-->
         <div class="toolbar">
-          <div class="toolbar-inner"><a href="#" class="link">Link 1</a><a href="#" class="link">Link 2</a></div>
+          <div class="toolbar-inner"><a href="#" class="links make-appointment">MAKE APPOINTMENT</a></div>
         </div>
       </div>
     </div>
