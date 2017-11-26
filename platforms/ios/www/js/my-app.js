@@ -3,6 +3,10 @@ var myApp = new Framework7();
 // Export selectors engine
 var $$ = Dom7;
 
+$$(document).on('deviceready', function(){ 
+    navigator.splashscreen.show();
+})
+
 // Add view
 
 $$('.close-left-panel').on('click', function (e) {
