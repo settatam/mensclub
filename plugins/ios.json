@@ -48,6 +48,9 @@
         },
         "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "com.mensclubbarbershop"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.mensclubbarbershop"
         }
     },
     "dependent_plugins": {

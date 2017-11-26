@@ -39,6 +39,9 @@
         },
         "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.mensclubbarbershop"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.mensclubbarbershop"
         }
     },
     "dependent_plugins": {
