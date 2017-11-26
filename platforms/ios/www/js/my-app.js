@@ -5,17 +5,28 @@ var myApp = new Framework7();
 var $$ = Dom7;
 
 // Add view
+
+$$('.close-left-panel').on('click', function (e) {
+        // 'left' position to open Left panel
+        myApp.closePanel('left');
+});
+
 var mainView = myApp.addView('.view-main', {
     // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
+
+});
+
+$$('.make-appointment').on('click', function (e) {
+    var iframe = '<iframe width="100%" style="height: 100em;" src="https://online.getsquire.com/mens-club-barbershop-philadelphia" frameborder="0"></iframe>';
+    $$('.popup').html("Loading...");
+    $$('.popup').html(iframe);
+    myApp.popup('.popup');
 });
 
 // Callbacks to run specific code for specific pages, for example for About page:
-myApp.onPageInit('about', function (page) {
-    // run createContentPage func after link was clicked
-    $$('.create-page').on('click', function () {
-        createContentPage();
-    });
+myApp.onPageInit('gallery', function (page) {
+    myApp.closePanel('left');
 });
 
 // Generate dynamic page
