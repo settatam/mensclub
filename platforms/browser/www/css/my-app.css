@@ -16,7 +16,7 @@ body {
 .left-nav a {color: white;font-size: 18px;letter-spacing: 0.125em;display: block;margin-bottom: 15px; text-align: right}
 /** End left Nav **/
 
-.left-hamburger { position: absolute; left: 10px; top: 50%;height: 40px;width: 40px;margin-top: -20px; background: url(..//img/hamburger.png) no-repeat -0px, -0px;}
+.left-hamburger { position: absolute; left: 10px; top: 50%;height: 40px;width: 40px;margin-top: -20px; background: url(../img/hamburger.png) no-repeat -0px, -0px;}
 .page-content { color: #fff;} 
 
 /** toolbar **/
