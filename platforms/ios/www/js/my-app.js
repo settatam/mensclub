@@ -33,6 +33,11 @@ myApp.onPageInit('gallery', function (page) {
 });
 myApp.onPageInit('contact', function (page) {
     myApp.closePanel('left');
+    new GMaps({
+        div: '#map',
+        lat: -12.043333,
+        lng: -77.028333
+    });
 });
 
 myApp.onPageInit('index', function (page) {
