@@ -4,7 +4,7 @@ var myApp = new Framework7();
 var $$ = Dom7;
 
 $$(document).on('deviceready', function(){ 
-    navigator.splashscreen.show();
+    navigator.splashscreen.hide();
 })
 
 // Add view
