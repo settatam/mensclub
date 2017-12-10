@@ -31,14 +31,16 @@ $$('.make-appointment').on('click', function (e) {
 myApp.onPageInit('gallery', function (page) {
     myApp.closePanel('left');
 });
+
 myApp.onPageInit('contact', function (page) {
     myApp.closePanel('left');
-    new GMaps({
-        div: '#map',
-        lat: -12.043333,
-        lng: -77.028333
-    });
-}).trigger();
+    initMap();
+    // new GMaps({
+    //     div: '#map',
+    //     lat: -12.043333,
+    //     lng: -77.028333
+    // });
+});
 
 myApp.onPageInit('index', function (page) {
     myApp.closePanel('left');
@@ -72,3 +74,10 @@ function createContentPage() {
     );
 	return;
 }
+
+function initMap() {
+        map = new google.maps.Map(document.getElementById('maps'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+    }
