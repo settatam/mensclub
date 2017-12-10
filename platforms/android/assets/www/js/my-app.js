@@ -34,7 +34,7 @@ myApp.onPageInit('gallery', function (page) {
 
 myApp.onPageInit('contact', function (page) {
     myApp.closePanel('left');
-    initMap();
+    //initMap();
     // new GMaps({
     //     div: '#map',
     //     lat: -12.043333,
