@@ -38,7 +38,7 @@ myApp.onPageInit('contact', function (page) {
         lat: -12.043333,
         lng: -77.028333
     });
-});
+}).trigger();
 
 myApp.onPageInit('index', function (page) {
     myApp.closePanel('left');
