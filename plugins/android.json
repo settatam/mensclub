@@ -1,52 +1,55 @@
 {
-    "prepare_queue": {
-        "installed": [],
-        "uninstalled": []
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
     },
-    "config_munge": {
-        "files": {}
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
     },
-    "installed_plugins": {
-        "cordova-plugin-battery-status": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        },
-        "cordova-plugin-camera": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        },
-        "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        },
-        "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        },
-        "cordova-plugin-geolocation": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        },
-        "cordova-plugin-globalization": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        },
-        "cordova-plugin-inappbrowser": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        },
-        "cordova-plugin-media-capture": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        },
-        "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        },
-        "cordova-plugin-vibration": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        },
-        "cordova-plugin-splashscreen": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        }
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
     },
-    "dependent_plugins": {
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "com.mensclubbarbershop"
-        }
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
     }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
+    }
+  }
 }
