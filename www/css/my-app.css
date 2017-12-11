@@ -24,3 +24,13 @@ body {
 .toolbar { background-color: red; text-align: center; justify-content: center; height: 50px;}
 .toolbar a {color: white; font-weight: bold; display: block; text-align: center; width: 100%; height: 100%; padding-top: 25px;}
 .toolbar-inner {justify-content: center;}
+.swiper-container { height: 250px; }
+.swiper-slide {
+  background:blue;
+}
+.swiper-slide span {
+  text-align:center;
+  display:block;
+  margin:20px;
+  font-size:21px;
+}

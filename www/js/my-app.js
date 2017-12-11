@@ -14,9 +14,7 @@ $$('.close-left-panel').on('click', function (e) {
 });
 
 var mainView = myApp.addView('.view-main', {
-    // Because we use fixed-through navbar we can enable dynamic navbar
     dynamicNavbar: true
-
 });
 
 $$('.make-appointment').on('click', function (e) {
@@ -30,11 +28,15 @@ $$('.make-appointment').on('click', function (e) {
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('gallery', function (page) {
     myApp.closePanel('left');
+    var mySwiper = myApp.swiper('.swiper-container', {
+        speed: 400,
+        spaceBetween: 100,
+        pagination:'.swiper-pagination'
+    });
 });
 
 myApp.onPageInit('contact', function (page) {
     myApp.closePanel('left');
-    initMap();
     // new GMaps({
     //     div: '#map',
     //     lat: -12.043333,
