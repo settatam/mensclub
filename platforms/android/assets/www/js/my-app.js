@@ -31,7 +31,11 @@ myApp.onPageInit('gallery', function (page) {
     var mySwiper = myApp.swiper('.swiper-container', {
         speed: 400,
         spaceBetween: 100,
-        pagination:'.swiper-pagination'
+        pagination:'.swiper-pagination',
+         paginationHide: false,
+          paginationClickable: true,
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
     });
 });
 
