@@ -59,6 +59,44 @@
     <feature name="CallNumber">
         <param name="ios-package" value="CFCallNumber" />
     </feature>
+    <feature name="CordovaGoogleMaps">
+        <param name="ios-package" value="CordovaGoogleMaps" />
+        <param name="onload" value="true" />
+        <param name="onreset" value="true" />
+    </feature>
+    <feature name="Environment">
+        <param name="ios-package" value="Environment" />
+    </feature>
+    <feature name="Geocoder">
+        <param name="ios-package" value="PluginGeocoder" />
+    </feature>
+    <feature name="Map">
+        <param name="ios-package" value="PluginMap" />
+    </feature>
+    <feature name="Circle">
+        <param name="ios-package" value="PluginCircle" />
+    </feature>
+    <feature name="GroundOverlay">
+        <param name="ios-package" value="PluginGroundOverlay" />
+    </feature>
+    <feature name="KmlOverlay">
+        <param name="ios-package" value="PluginKmlOverlay" />
+    </feature>
+    <feature name="Marker">
+        <param name="ios-package" value="PluginMarker" />
+    </feature>
+    <feature name="Polygon">
+        <param name="ios-package" value="PluginPolygon" />
+    </feature>
+    <feature name="Polyline">
+        <param name="ios-package" value="PluginPolyline" />
+    </feature>
+    <feature name="TileOverlay">
+        <param name="ios-package" value="PluginTileOverlay" />
+    </feature>
+    <feature name="MarkerCluster">
+        <param name="ios-package" value="PluginMarkerCluster" />
+    </feature>
     <name>Men's Club BarberShop</name>
     <description>
         Mobile App for Men's club barbershop

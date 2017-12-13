@@ -30,6 +30,9 @@
     },
     "cordova-plugin-call-number": {
       "PACKAGE_NAME": "com.mensclubbarbershop"
+    },
+    "cordova-plugin-googlemaps": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
     }
   },
   "dependent_plugins": {
