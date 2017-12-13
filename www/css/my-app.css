@@ -42,6 +42,8 @@ body {
 .img-item img {
 	max-width: 100%;
 }
+.hero {margin: 0 -15px;}
 .hero img {width: 100%;}
 .call-icon {width: 60px; height: 61px; background-color: transparent; position: absolute; bottom: 32px; right: 10px; z-index: 10000; display: block}
 .call-icon img {max-width: 100%;}
+.content-block {margin-top: 60px;}
