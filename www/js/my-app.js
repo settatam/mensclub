@@ -2,7 +2,8 @@ var myApp = new Framework7();
 
 // Export selectors engine
 var $$ = Dom7;
-var photos = [];
+var photoss = [];
+
 
 $$(document).on('deviceready', function(){ 
     navigator.splashscreen.hide();
@@ -59,19 +60,28 @@ myApp.onPageInit('index', function (page) {
 
 /*=== Default standalone ===*/
 var myPhotoBrowserStandalone = myApp.photoBrowser({
-    photos : photos
+    photos : photoss,
 });
 //Open photo browser on click
 $$(document).on('click', '.img-item', function () {
     photos = [];
     var image = $$(this).find('img').prop('src');
-    photos.push(image);
+    photoss[0]=image;
     var img_doc = $$(document).find('.img-item img');
     console.log(img_doc);
     for(var i=0; i<img_doc.length; i++){
-        photos.push(img_doc[i].src);
+        photoss[i+1]=img_doc[i].src;
     }
-    myPhotoBrowserStandalone.open();
+
+    myApp.photoBrowser({
+        photos: photoss,
+        theme: 'dark',
+        type: 'popup'
+    }).open();
+    // setTimeout(function() {
+    //     myPhotoBrowserStandalone.open();
+    // }, 1000)
+    
 });
 
 
