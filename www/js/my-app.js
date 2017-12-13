@@ -45,16 +45,11 @@ myApp.onPageInit('gallery', function (page) {
 
 myApp.onPageInit('contact', function (page) {
     myApp.closePanel('left');
-    var div = document.getElementById("maps");
-    map = plugin.google.maps.Map.getMap(div);
-    alert("mao ready")
-    map.addEventListener(plugin.google.maps.event.MAP_READY, onMapReady);
-
-    // new GMaps({
-    //     div: '#map',
-    //     lat: -12.043333,
-    //     lng: -77.028333
-    // });
+    new GMaps({
+        div: '#maps',
+        lat: -12.043333,
+        lng: -77.028333
+    });
 });
 
 myApp.onPageInit('index', function (page) {
@@ -103,30 +98,4 @@ function onSuccess(result){
  
 function onError(result) {
   console.log("Error:"+result);
-}
-
-function onMapReady() {
-    alert('Map working')
-  map.animateCamera({
-    target: {lat: 37.422359, lng: -122.084344},
-    zoom: 17,
-    tilt: 60,
-    bearing: 140,
-    duration: 5000
-  }, function() {
-
-    // Add a maker
-    map.addMarker({
-      position: {lat: 37.422359, lng: -122.084344},
-      title: "Welcome to \n" +
-             "Cordova GoogleMaps plugin for iOS and Android",
-      snippet: "This plugin is awesome!",
-      animation: plugin.google.maps.Animation.BOUNCE
-    }, function(marker) {
-
-      // Show the info window
-      marker.showInfoWindow();
-
-    });
-  });
 }
