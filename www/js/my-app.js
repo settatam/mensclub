@@ -76,7 +76,7 @@ $$(document).on('click', '.img-item', function () {
     myApp.photoBrowser({
         photos: photoss,
         theme: 'dark',
-        type: 'popup'
+        type: 'page'
     }).open();
     // setTimeout(function() {
     //     myPhotoBrowserStandalone.open();
