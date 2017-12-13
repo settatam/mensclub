@@ -45,6 +45,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.mensclubbarbershop"
+    },
+    "cordova-plugin-call-number": {
+      "PACKAGE_NAME": "com.mensclubbarbershop"
     }
   },
   "dependent_plugins": {

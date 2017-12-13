@@ -13,6 +13,11 @@ $$('.close-left-panel').on('click', function (e) {
         myApp.closePanel('left');
 });
 
+$$('.call-icon').on('click', function (e) {
+    alert("Make this call");
+    window.plugins.CallNumber.callNumber(onSuccess, onError, "800123456", true);
+});
+
 var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
@@ -86,4 +91,12 @@ function initMap() {
           center: {lat: -34.397, lng: 150.644},
           zoom: 8
         });
-    }
+}
+
+function onSuccess(result){
+  console.log("Success:"+result);
+}
+ 
+function onError(result) {
+  console.log("Error:"+result);
+}

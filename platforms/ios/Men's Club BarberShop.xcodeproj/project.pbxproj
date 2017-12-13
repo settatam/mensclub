@@ -44,6 +44,7 @@
 		1BF92E03F5544B5D9A5CD378 /* CDVFileTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2BE298AA3284915AED37708 /* CDVFileTransfer.m */; };
 		8DD56BD0655E4E4BA89DF4C4 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ED599BAC0043358C83933E /* CDVSplashScreen.m */; };
 		4B0664B3D7C04550BE7787A6 /* CDVViewController+SplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 511D937ADDBB408CB65CC502 /* CDVViewController+SplashScreen.m */; };
+		59559AD8A0B9426FB98993BC /* CFCallNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B787AADD4AA47648D2D3A5A /* CFCallNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +133,8 @@
 		511D937ADDBB408CB65CC502 /* CDVViewController+SplashScreen.m */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.m"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		ECA2F859B84940B68D795F76 /* CDVSplashScreen.h */ = {isa = PBXFileReference; name = "CDVSplashScreen.h"; path = "cordova-plugin-splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		60BF89F85498419B9D24C96A /* CDVViewController+SplashScreen.h */ = {isa = PBXFileReference; name = "CDVViewController+SplashScreen.h"; path = "cordova-plugin-splashscreen/CDVViewController+SplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		2B787AADD4AA47648D2D3A5A /* CFCallNumber.m */ = {isa = PBXFileReference; name = "CFCallNumber.m"; path = "cordova-plugin-call-number/CFCallNumber.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		D5D42623485C4117BE41757E /* CFCallNumber.h */ = {isa = PBXFileReference; name = "CFCallNumber.h"; path = "cordova-plugin-call-number/CFCallNumber.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +293,8 @@
 				511D937ADDBB408CB65CC502 /* CDVViewController+SplashScreen.m */,
 				ECA2F859B84940B68D795F76 /* CDVSplashScreen.h */,
 				60BF89F85498419B9D24C96A /* CDVViewController+SplashScreen.h */,
+				2B787AADD4AA47648D2D3A5A /* CFCallNumber.m */,
+				D5D42623485C4117BE41757E /* CFCallNumber.h */,
 			);
 			name = Plugins;
 			path = "Men's Club BarberShop/Plugins";
@@ -423,6 +428,7 @@
 				1BF92E03F5544B5D9A5CD378 /* CDVFileTransfer.m in Sources */,
 				8DD56BD0655E4E4BA89DF4C4 /* CDVSplashScreen.m in Sources */,
 				4B0664B3D7C04550BE7787A6 /* CDVViewController+SplashScreen.m in Sources */,
+				59559AD8A0B9426FB98993BC /* CFCallNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
