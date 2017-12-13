@@ -34,3 +34,11 @@ body {
   margin:20px;
   font-size:21px;
 }
+.img-wrapper {
+	width: 100%;
+}
+.img-item { display: block; }
+
+.img-item img {
+	max-width: 100%;
+}
