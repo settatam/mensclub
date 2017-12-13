@@ -43,5 +43,5 @@ body {
 	max-width: 100%;
 }
 .hero img {width: 100%;}
-.call-icon {width: 80px; height: 81px; background-color: transparent; position: absolute; bottom: 40px; right: 10px; z-index: 10000; display: block}
+.call-icon {width: 60px; height: 61px; background-color: transparent; position: absolute; bottom: 32px; right: 10px; z-index: 10000; display: block}
 .call-icon img {max-width: 100%;}
