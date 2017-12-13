@@ -56,31 +56,11 @@
     <string/>
     <key>NSPhotoLibraryUsageDescription</key>
     <string/>
-    <key>NSLocationWhenInUseUsageDescription</key>
-    <string>Show your location on the map</string>
     <key>NSMicrophoneUsageDescription</key>
     <string/>
-    <key>Google Maps API Key</key>
-    <string>AIzaSyAawBNmyhsFkJK7_WZdQzAQ2wmoU_12_js</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>Trace your location on the map</string>
     <key>LSApplicationQueriesSchemes</key>
-    <array>
-      <string>googlechromes</string>
-      <string>comgooglemaps</string>
-    </array>
-    <key>CFBundleURLTypes</key>
-    <array>
-      <dict>
-        <key>CFBundleTypeRole</key>
-        <string>Editor</string>
-        <key>CFBundleURLName</key>
-        <string>com.mensclubbarbershop</string>
-        <key>CFBundleURLSchemes</key>
-        <array>
-          <string>com.mensclubbarbershop</string>
-        </array>
-      </dict>
-    </array>
+    <array/>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string/>
   </dict>
 </plist>

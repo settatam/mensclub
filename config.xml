@@ -120,10 +120,4 @@
     <plugin name="cordova-plugin-file-transfer" spec="1.6.3" />
     <plugin name="cordova-plugin-whitelist" spec="~1.3.3" />
     <plugin name="cordova-plugin-call-number" spec="~1.0.1" />
-    <plugin name="cordova-plugin-googlemaps" spec="~2.1.1">
-        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDxbKmBBI1yqHAeIEA_6yM5Vq6m1fkREUE" />
-        <variable name="API_KEY_FOR_IOS" value="AIzaSyAawBNmyhsFkJK7_WZdQzAQ2wmoU_12_js" />
-        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Show your location on the map" />
-        <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Trace your location on the map" />
-    </plugin>
 </widget>

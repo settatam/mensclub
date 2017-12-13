@@ -135,26 +135,5 @@
     },
     "is_top_level": true,
     "variables": {}
-  },
-  "cordova-plugin-googlemaps": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-googlemaps"
-    },
-    "is_top_level": true,
-    "variables": {
-      "API_KEY_FOR_ANDROID": "AIzaSyDxbKmBBI1yqHAeIEA_6yM5Vq6m1fkREUE",
-      "API_KEY_FOR_IOS": "AIzaSyAawBNmyhsFkJK7_WZdQzAQ2wmoU_12_js",
-      "LOCATION_WHEN_IN_USE_DESCRIPTION": "Show your location on the map",
-      "LOCATION_ALWAYS_USAGE_DESCRIPTION": "Trace your location on the map"
-    }
-  },
-  "com.googlemaps.ios": {
-    "source": {
-      "type": "registry",
-      "id": "https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk"
-    },
-    "is_top_level": false,
-    "variables": {}
   }
 }

@@ -48,10 +48,6 @@
     },
     "cordova-plugin-call-number": {
       "PACKAGE_NAME": "com.mensclubbarbershop"
-    },
-    "cordova-plugin-googlemaps": {
-      "API_KEY_FOR_ANDROID": "AIzaSyDxbKmBBI1yqHAeIEA_6yM5Vq6m1fkREUE",
-      "PACKAGE_NAME": "com.mensclubbarbershop"
     }
   },
   "dependent_plugins": {
