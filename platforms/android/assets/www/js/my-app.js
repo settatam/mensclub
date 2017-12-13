@@ -14,7 +14,6 @@ $$('.close-left-panel').on('click', function (e) {
 });
 
 $$('.call-icon').on('click', function (e) {
-    alert("Make this call");
     window.plugins.CallNumber.callNumber(onSuccess, onError, "800123456", true);
 });
 
