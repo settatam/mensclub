@@ -47,6 +47,7 @@ myApp.onPageInit('contact', function (page) {
     myApp.closePanel('left');
     var div = document.getElementById("maps");
     map = plugin.google.maps.Map.getMap(div);
+    alert("mao ready")
     map.addEventListener(plugin.google.maps.event.MAP_READY, onMapReady);
 
     // new GMaps({
@@ -105,7 +106,7 @@ function onError(result) {
 }
 
 function onMapReady() {
-  var button = document.getElementById("button");
+    alert('Map working')
   map.animateCamera({
     target: {lat: 37.422359, lng: -122.084344},
     zoom: 17,
@@ -117,7 +118,7 @@ function onMapReady() {
     // Add a maker
     map.addMarker({
       position: {lat: 37.422359, lng: -122.084344},
-      title: "Welecome to \n" +
+      title: "Welcome to \n" +
              "Cordova GoogleMaps plugin for iOS and Android",
       snippet: "This plugin is awesome!",
       animation: plugin.google.maps.Animation.BOUNCE
@@ -126,13 +127,6 @@ function onMapReady() {
       // Show the info window
       marker.showInfoWindow();
 
-      // Catch the click event
-      marker.on(plugin.google.maps.event.INFO_CLICK, function() {
-
-        // To do something...
-        alert("Hello world!");
-
-      });
     });
   });
 }
