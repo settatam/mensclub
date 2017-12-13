@@ -2,6 +2,7 @@ var myApp = new Framework7();
 
 // Export selectors engine
 var $$ = Dom7;
+var photos = [];
 
 $$(document).on('deviceready', function(){ 
     navigator.splashscreen.hide();
@@ -55,6 +56,24 @@ myApp.onPageInit('contact', function (page) {
 myApp.onPageInit('index', function (page) {
     myApp.closePanel('left');
 });
+
+/*=== Default standalone ===*/
+var myPhotoBrowserStandalone = myApp.photoBrowser({
+    photos : photos
+});
+//Open photo browser on click
+$$(document).on('click', '.img-item', function () {
+    photos = [];
+    var image = $$(this).find('img').prop('src');
+    photos.push(image);
+    var img_doc = $$(document).find('.img-item img');
+    console.log(img_doc);
+    for(var i=0; i<img_doc.length; i++){
+        photos.push(img_doc[i].src);
+    }
+    myPhotoBrowserStandalone.open();
+});
+
 
 // Generate dynamic page
 var dynamicPageIndex = 0;
