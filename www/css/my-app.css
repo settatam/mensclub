@@ -37,6 +37,10 @@ body {
 .img-wrapper {
 	width: 100%;
 }
+
+h1 {
+	font-weight: normal; font-size: 14px; text-align: center;
+}
 .img-item { display: block; }
 
 .img-item img {
