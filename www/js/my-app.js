@@ -49,10 +49,11 @@ myApp.onPageInit('contact', function (page) {
     myApp.closePanel('left');
     new GMaps({
         div: '#maps',
-        lat: -12.043333,
-        lng: -77.028333
+        lat: 40.051329,
+        lng: -75.236099
     });
 });
+
 
 myApp.onPageInit('index', function (page) {
     myApp.closePanel('left');

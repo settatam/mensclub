@@ -8,8 +8,8 @@ body {
 /** Panel **/
 .panel .close {text-indent: -1000px; width: 80px; height: 80px; background: url(../img/close.png) no-repeat -0px, -0px; position: absolute; top: 32px; right: -32px; background-size: 25%}
 .panel {background-color: #004b8c;}
-.panel .phone { width: 60px; height: 60px; position: absolute; bottom: 40%; right: 25px;}
-.panel .location { width: 60px; height: 60px; position: absolute; bottom: 20%; right: 25px;}
+.panel .phone { width: 60px; height: 60px; position: absolute; bottom: 40%; right: 25px; display: block}
+.panel .location { width: 60px; height: 60px; position: absolute; bottom: 20%; right: 25px; display: block}
 /** Left Nav **/
 .left-nav {margin-top: 140px; margin-right: 12px;}
 .left-nav > * { color: white; list-style-type: none;}
