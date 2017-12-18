@@ -34,6 +34,7 @@ $$('.make-appointment').on('click', function (e) {
 // Callbacks to run specific code for specific pages, for example for About page:
 myApp.onPageInit('gallery', function (page) {
     myApp.closePanel('left');
+    $$('.left-hamburger').removeClass('hide');
     var mySwiper = myApp.swiper('.swiper-container', {
         speed: 400,
         spaceBetween: 100,
@@ -46,6 +47,7 @@ myApp.onPageInit('gallery', function (page) {
 });
 
 myApp.onPageInit('contact', function (page) {
+    $$('.left-hamburger').removeClass('hide');
     myApp.closePanel('left');
     new GMaps({
         div: '#maps',
@@ -56,6 +58,7 @@ myApp.onPageInit('contact', function (page) {
 
 
 myApp.onPageInit('index', function (page) {
+    $$('.left-hamburger').removeClass('hide');
     myApp.closePanel('left');
 });
 
@@ -66,10 +69,10 @@ var myPhotoBrowserStandalone = myApp.photoBrowser({
 //Open photo browser on click
 $$(document).on('click', '.img-item', function () {
     photos = [];
+    $$('.left-hamburger').addClass('hide');
     var image = $$(this).find('img').prop('src');
     photoss[0]=image;
     var img_doc = $$(document).find('.img-item img');
-    console.log(img_doc);
     for(var i=0; i<img_doc.length; i++){
         photoss[i+1]=img_doc[i].src;
     }
