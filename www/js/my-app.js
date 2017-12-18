@@ -35,6 +35,7 @@ $$('.make-appointment').on('click', function (e) {
 myApp.onPageInit('gallery', function (page) {
     myApp.closePanel('left');
     $$('.left-hamburger').removeClass('hide');
+    $$('.logo').removeClass('hide');
     var mySwiper = myApp.swiper('.swiper-container', {
         speed: 400,
         spaceBetween: 100,
@@ -48,6 +49,7 @@ myApp.onPageInit('gallery', function (page) {
 
 myApp.onPageInit('contact', function (page) {
     $$('.left-hamburger').removeClass('hide');
+    $$('.logo').removeClass('hide');
     myApp.closePanel('left');
     new GMaps({
         div: '#maps',
@@ -59,6 +61,7 @@ myApp.onPageInit('contact', function (page) {
 
 myApp.onPageInit('index', function (page) {
     $$('.left-hamburger').removeClass('hide');
+    $$('.logo').removeClass('hide');
     myApp.closePanel('left');
 });
 
@@ -70,6 +73,7 @@ var myPhotoBrowserStandalone = myApp.photoBrowser({
 $$(document).on('click', '.img-item', function () {
     photos = [];
     $$('.left-hamburger').addClass('hide');
+    $$('.logo').addClass('hide');
     var image = $$(this).find('img').prop('src');
     photoss[0]=image;
     var img_doc = $$(document).find('.img-item img');
