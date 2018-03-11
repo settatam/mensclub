@@ -16,7 +16,7 @@ $$('.close-left-panel').on('click', function (e) {
 });
 
 $$('.call-icon').on('click', function (e) {
-    window.plugins.CallNumber.callNumber(onSuccess, onError, "800123456", true);
+    window.plugins.CallNumber.callNumber(onSuccess, onError, "2154831831", true);
 });
 
 var mainView = myApp.addView('.view-main', {
