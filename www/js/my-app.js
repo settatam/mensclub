@@ -36,6 +36,9 @@ myApp.onPageInit('gallery', function (page) {
     myApp.closePanel('left');
     $$('.left-hamburger').removeClass('hide');
     $$('.logo').removeClass('hide');
+    myApp.request.get('http://hermondev.com/inst', function (data) {
+        $$('.img-container').html(data);
+    });
     var mySwiper = myApp.swiper('.swiper-container', {
         speed: 400,
         spaceBetween: 100,
