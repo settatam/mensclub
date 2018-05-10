@@ -62,6 +62,17 @@ myApp.onPageInit('contact', function (page) {
 });
 
 
+$$(document).on('click', '.location', function(e){
+     e.preventDefault();
+     if( navigator.geolocation ) {
+        navigator.geolocation.getCurrentPosition(function(position){
+        alert(position.coords.latitude + ',' + position.coords.longitude )
+        });
+    }
+})
+
+
+
 myApp.onPageInit('index', function (page) {
     $$('.left-hamburger').removeClass('hide');
     $$('.logo').removeClass('hide');
