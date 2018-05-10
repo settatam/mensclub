@@ -63,10 +63,9 @@ myApp.onPageInit('contact', function (page) {
 
 
 $$(document).on('click', '.location', function(e){
-     e.preventDefault();
      if( navigator.geolocation ) {
         navigator.geolocation.getCurrentPosition(function(position){
-        alert(position.coords.latitude + ',' + position.coords.longitude )
+        var ref = cordova.InAppBrowser.open("https://www.google.com/maps/dir/?api=1&origin="+position.coords.latitude+","+position.coords.longitude+"&destination=40.051322,-75.236090");
         });
     }
 })
