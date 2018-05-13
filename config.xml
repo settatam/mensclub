@@ -5,13 +5,14 @@
         Mobile App for Men's club barbershop
     </description>
     <author email="seth@mata-studio.com" href="http://mata-studio.com">
-        Seth Atan
+        Seth Atam
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="10000" />
+    <icon src="www/icon.png" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
