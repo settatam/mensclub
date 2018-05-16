@@ -36,7 +36,7 @@
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
-        <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
+        <icon height="114" platform="ios" src="www/res/. icon/ios/icon@2x.png" width="114" />
         <icon height="40" platform="ios" src="www/res/icon/ios/icon-40.png" width="40" />
         <icon height="80" platform="ios" src="www/res/icon/ios/icon-40@2x.png" width="80" />
         <icon height="50" platform="ios" src="www/res/icon/ios/icon-50.png" width="50" />
@@ -113,7 +113,7 @@
     <plugin name="cordova-plugin-device"/>
     <plugin name="cordova-plugin-dialogs"/>
     <plugin name="cordova-plugin-geolocation">
-        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value=" " />
+        <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Use to get driving directions to the barbarshop" />
     </plugin>
     <plugin name="cordova-plugin-globalization"/>
     <plugin name="cordova-plugin-inappbrowser"/>
@@ -127,4 +127,7 @@
    <!--  <config-file platform="android" parent="/manifest" mode="merge">
         <application android:debuggable="true"/>
     </config-file> -->
+    <gap:config-file overwrite="true" parent="NSLocationWhenInUseUsageDescription" platform="ios">
+        <string>Get directions to our shop</string>
+    </gap:config-file>
 </widget>

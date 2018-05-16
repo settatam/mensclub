@@ -7,6 +7,7 @@ var photoss = [];
 
 $$(document).on('deviceready', function(){ 
     navigator.splashscreen.hide();
+    document.getElementById("getPosition").addEventListener("click", getPosition);
 })
 
 // Add view
@@ -62,7 +63,7 @@ myApp.onPageInit('contact', function (page) {
 });
 
 
-$$(document).on('click', '.location', function(e){
+$$('.location').on('click', function(e){
      if( navigator.geolocation ) {
         navigator.geolocation.getCurrentPosition(function(position){
          var ref = cordova.InAppBrowser.open("https://www.google.com/maps/dir/?api=1&origin="+position.coords.latitude+","+position.coords.longitude+"&destination=40.051322,-75.236090");
@@ -148,4 +149,27 @@ function onSuccess(result){
  
 function onError(result) {
   console.log("Error:"+result);
+}
+
+function getPosition() {
+   var options = {
+      enableHighAccuracy: true,
+      maximumAge: 3600000
+   }
+   var watchID = navigator.geolocation.getCurrentPosition(onSuccess, onError, options);
+
+   function onSuccess(position) {
+      alert('Latitude: '          + position.coords.latitude          + '\n' +
+         'Longitude: '         + position.coords.longitude         + '\n' +
+         'Altitude: '          + position.coords.altitude          + '\n' +
+         'Accuracy: '          + position.coords.accuracy          + '\n' +
+         'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+         'Heading: '           + position.coords.heading           + '\n' +
+         'Speed: '             + position.coords.speed             + '\n' +
+         'Timestamp: '         + position.timestamp                + '\n');
+   };
+
+   function onError(error) {
+      alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
+   }
 }
