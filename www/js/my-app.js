@@ -62,6 +62,10 @@ myApp.onPageInit('contact', function (page) {
     });
 });
 
+$$('.position').on('click', function(e){
+    getPosition()
+})
+
 
 $$('.location').on('click', function(e){
      if( navigator.geolocation ) {
@@ -110,7 +114,7 @@ $$(document).on('click', '.img-item', function () {
 // Generate dynamic page
 var dynamicPageIndex = 0;
 function createContentPage() {
-	mainView.router.loadContent(
+    mainView.router.loadContent(
         '<!-- Top Navbar-->' +
         '<div class="navbar">' +
         '  <div class="navbar-inner">' +
@@ -133,7 +137,7 @@ function createContentPage() {
         '  </div>' +
         '</div>'
     );
-	return;
+    return;
 }
 
 function initMap() {
