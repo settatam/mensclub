@@ -128,7 +128,11 @@
    <!--  <config-file platform="android" parent="/manifest" mode="merge">
         <application android:debuggable="true"/>
     </config-file> -->
-    <gap:config-file overwrite="true" parent="NSLocationWhenInUseUsageDescription" platform="ios">
+    <gap:config-file overwrite="true" parent="NSLocationWhenInUseUsageDescription" platform="ios" mode="replace">
         <string>Get directions to our shop</string>
     </gap:config-file>
+    <gap:config-file overwrite="true" parent="NSLocationAlwaysUsageDescription" platform="ios" mode="replace">
+        <string>Get directions to our shop</string>
+    </gap:config-file>
+
 </widget>
