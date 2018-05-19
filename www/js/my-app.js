@@ -16,7 +16,7 @@ $$('.close-left-panel').on('click', function (e) {
         myApp.closePanel('left');
 });
 
-$$('.call-icon').on('click', function (e) {
+$$('.make-calls').on('click', function (e) {
     window.plugins.CallNumber.callNumber(onSuccess, onError, "2154831831", true);
 });
 
