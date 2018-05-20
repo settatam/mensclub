@@ -68,8 +68,8 @@ $$('.position').on('click', function(e){
 
 
 $$('.location').on('click', function(e){
-  alert('this is a check')
      if( navigator.geolocation ) {
+      alert('this is a navigation check')
         navigator.geolocation.getCurrentPosition(function(position){
          var ref = cordova.InAppBrowser.open("https://www.google.com/maps/dir/?api=1&origin="+position.coords.latitude+","+position.coords.longitude+"&destination=40.051322,-75.236090");
         });
