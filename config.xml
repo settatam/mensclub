@@ -149,5 +149,8 @@
     <gap:config-file overwrite="true" parent="NSLocationAlwaysUsageDescription" platform="ios" mode="replace">
         <string>Get directions to our shop</string>
     </gap:config-file>
+    <gap:plugin name="cordova-plugin-geolocation" source="npm" >
+
+    </gap:plugin>
 
 </widget>
