@@ -111,7 +111,7 @@
         <variable name="MICROPHONE_USAGE_DESCRIPTION" value=" " />
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value=" " />
     </plugin> -->
-    <plugin name="cordova-plugin-device"/>
+    <!-- <plugin name="cordova-plugin-device"/>
     <plugin name="cordova-plugin-dialogs"/>
     <plugin name="cordova-plugin-geolocation">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="Use to get driving directions to the barbarshop" />
@@ -124,7 +124,22 @@
     <plugin name="cordova-plugin-file-transfer" />
     <plugin name="cordova-plugin-whitelist" />
     <plugin name="cordova-plugin-call-number" />
-    <plugin name="cordova-plugin-splashscreen"/>
+    <plugin name="cordova-plugin-splashscreen"/> -->
+    
+    <plugin name="cordova-plugin-battery-status" spec="2.0.2" />
+    <plugin name="cordova-plugin-call-number" spec="1.0.1" />
+    <plugin name="cordova-plugin-device" spec="2.0.2" />
+    <plugin name="cordova-plugin-dialogs" spec="2.0.1" />
+    <plugin name="cordova-plugin-file" spec="6.0.1" />
+    <plugin name="cordova-plugin-file-transfer" spec="1.7.1" />
+    <plugin name="cordova-plugin-geolocation" spec="4.0.1" />
+    <plugin name="cordova-plugin-globalization" spec="1.11.0" />
+    <plugin name="cordova-plugin-inappbrowser" spec="3.0.0" />
+    <plugin name="cordova-plugin-network-information" spec="2.0.1" />
+    <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
+    <plugin name="cordova-plugin-vibration" spec="3.1.0" />
+    <plugin name="cordova-plugin-whitelist" spec="1.3.3" />
+   
    <!--  <config-file platform="android" parent="/manifest" mode="merge">
         <application android:debuggable="true"/>
     </config-file> -->
