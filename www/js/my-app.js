@@ -25,7 +25,7 @@ var mainView = myApp.addView('.view-main', {
 });
 
 $$('.make-appointment').on('click', function (e) {
-    var ref = cordova.InAppBrowser.open("https://online.getsquire.com/mens-club-barbershop-philadelphia");
+    var ref = cordova.InAppBrowser.open("https://online.getsquire.com/mens-club-barbershop-philadelphia"'_blank', 'location=yes', '_blank', 'location=yes');
     // var iframe = '<iframe width="100%" style="height: 100em;" src="https://online.getsquire.com/mens-club-barbershop-philadelphia" frameborder="0"></iframe>';
     // $$('.popup').html("Loading...");
     // $$('.popup').html(iframe);
@@ -71,7 +71,7 @@ $$('.location').on('click', function(e){
      if( navigator.geolocation ) {
       alert('this is a navigation check')
         navigator.geolocation.getCurrentPosition(function(position){
-         var ref = cordova.InAppBrowser.open("https://www.google.com/maps/dir/?api=1&origin="+position.coords.latitude+","+position.coords.longitude+"&destination=40.051322,-75.236090");
+         var ref = cordova.InAppBrowser.open("https://www.google.com/maps/dir/?api=1&origin="+position.coords.latitude+","+position.coords.longitude+"&destination=40.051322,-75.236090", '_blank', 'location=yes');
         });
     }else{
         cordova.InAppBrowser.open("https://www.google.com/maps");
