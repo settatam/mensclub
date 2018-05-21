@@ -53,7 +53,7 @@
         <icon height="87" platform="ios" src="www/res/icon/ios/icon-small@3x.png" width="87" />
         
         <icon src="www/res/icon/ios/icon-1024.png" width="1024" height="1024" platform="ios"/>
-        <splash src="res/screen/ios/Default@2x~universal~anyany.png" />
+        <splash src="www/res/screen/ios/Default@2x~universal~anyany.png" />
         
         <!-- <splash height="568" platform="ios" src="www/res/screen/ios/launchiPhone5-568h@2x.png" width="320" />
         <splash height="568" platform="ios" src="www/res/screen/ios/Default-568h@2x~iphone.png" width="640" />
