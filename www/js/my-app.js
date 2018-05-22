@@ -29,6 +29,7 @@ $$('.make-appointment').on('click', function (e) {
     //   footer: "yes",
     //   location: "yes"
     // } 
+    alert('yes')
     var ref = cordova.InAppBrowser.open("https://online.getsquire.com/mens-club-barbershop-philadelphia", "_blank", 'location=yes');
     // var iframe = '<iframe width="100%" style="height: 100em;" src="https://online.getsquire.com/mens-club-barbershop-philadelphia" frameborder="0"></iframe>';
     // $$('.popup').html("Loading...");
