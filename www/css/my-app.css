@@ -63,9 +63,9 @@ body {
 }
 
 h1 {
-	font-weight: normal; font-size: 1.475em; text-align: center; font-family: RobotoMedium; letter-spacing: 0.0625em;
+	font-weight: normal; font-size: 1.475em; text-align: center; font-family: RobotoMedium; letter-spacing: 0.0625em; line-height: 28px;
 }
-h2 { font-family: RobotoMedium; letter-spacing: 0.0625em; font-size: 1.175em;}
+h2 { font-family: RobotoMedium; letter-spacing: 0.0625em; font-size: 1.175em; margin: 25px 0;}
 
 .img-item { display: block; }
 
