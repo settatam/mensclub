@@ -1,5 +1,22 @@
 body {
 	background-color: #000;
+  font-family: Roboto;
+  font-size: 0.875em;
+  line-height: 22px;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('Roboto-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('Roboto-Medium.ttf') format('truetype');
 }
 
 .page { background-color: #000; }
@@ -46,8 +63,9 @@ body {
 }
 
 h1 {
-	font-weight: normal; font-size: 18px; text-align: center;
+	font-weight: normal; font-size: 1.375em; text-align: center; font-family: RobotoMedium; letter-spacing: 0.0625em;
 }
+h2 { font-family: RobotoMedium; letter-spacing: 0.0625em; font-size: 1.175em;}
 
 .img-item { display: block; }
 
