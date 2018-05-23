@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!-- <widget id="com.mensclub.app" version="1.3.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"> -->
+<widget id="com.mensclub.app" version="1.3.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <!-- For andriod -->
-<widget id="com.mensclubbarbershop" version="1.3.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<!-- <widget id="com.mensclubbarbershop" version="1.3.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"> -->
     <name>Men's Club BarberShop</name>
     <description>
         Mobile App for Men's club barbershop
