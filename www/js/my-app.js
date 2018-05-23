@@ -41,11 +41,10 @@ myApp.onPageInit('gallery', function (page) {
     $$('.left-hamburger').removeClass('hide');
     $$('.logo').removeClass('hide');
     $$.ajax({
-      url: 'http://api.flickr.com/services/rest/?&method=flickr.people.getPublicPhotos&api_key=eb2db15f500496ac4b23b13bd8618d8b&user_id=27429098@N05&per_page=20&format=json&nojsoncallback=1',
+      url: 'https://api.flickr.com/services/rest/?&method=flickr.people.getPublicPhotos&api_key=eb2db15f500496ac4b23b13bd8618d8b&user_id=27429098@N05&per_page=20&format=json&nojsoncallback=1',
       method: 'GET',
       success: function(response){
         photos = JSON.parse(response)
-        console.log(photos.photos.photo)
         $$.each(photos.photos.photo, function(k, v){
           img_url = 'https://farm'+v.farm+'.staticflickr.com/'+v.server+'/'+v.id+'_'+v.secret+'.jpg';
           $$('#image-'+k).attr('src', img_url)
